@@ -1,0 +1,6 @@
+board
+adafruit-circuitpython-dht
+gpiozero
+gpiod
+lgpio
+flask

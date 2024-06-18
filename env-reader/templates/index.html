@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Temperature and Humidity</title>
+    <script>
+      function fetchData() {
+        fetch('/data')
+          .then((response) => response.json())
+          .then((data) => {
+            const now = new Date()
+            document.getElementById('temperature').innerText = `Temperature: ${data.temperature}°C`
+            document.getElementById('humidity').innerText = `Humidity: ${data.humidity}%`
+            document.getElementById('datetime').innerText = `Last Updated: ${now.toLocaleString()}`
+          })
+      }
+      fetchData()
+      setInterval(fetchData, 5000)
+    </script>
+  </head>
+  <body>
+    <h1>Temperature and Humidity</h1>
+    <p id="temperature">Temperature:</p>
+    <p id="humidity">Humidity:</p>
+    <p id="datetime">Last Updated:</p>
+  </body>
+</html>
