@@ -1,5 +1,6 @@
 board
 adafruit-circuitpython-dht
+w1thermsensor
 gpiozero
 gpiod
 lgpio
