@@ -14,7 +14,7 @@ To get started with the smart-cage project, follow these steps:
 1. Clone this repository: `git clone https://github.com/satoshinbp/smart-cage.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Start the temperature reader: `python temp-reader.py`
-4. Start the wheel rotation counter: `python rotation counter.py`
+4. Start the wheel rotation counter: `python rotation-counter.py`
 
 ## License
 
